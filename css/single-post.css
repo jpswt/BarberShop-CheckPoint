@@ -1,0 +1,404 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* General font and color styles */
+:root {
+	--color-primary: #fff;
+	--color-secondary: #252525;
+	--color-accent: #0ba39c;
+
+	--ff-nav: 'Arial Black', sans-serif;
+	--ff-heading: 'Poller One', cursive;
+	--ff-logo: 'Leckerli One', cursive;
+	--ff-primary: Arial, Helvetica, sans-serif;
+}
+
+/* Conversion format for rem sizes */
+html {
+	font-size: 62.5%;
+}
+
+/* Setting background to white and primary font and size of Arial */
+body {
+	background: var(--color-primary);
+	font-family: var(--ff-primary);
+	font-size: 0.9rem;
+	line-height: 1;
+	padding: 0;
+}
+
+/* Zero out margins */
+body,
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
+
+/* Centering content with flexbox in header */
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 2em;
+	padding-bottom: 2.5em;
+}
+
+/* Setting width of logo */
+header > img {
+	width: 400px;
+	display: inline;
+}
+
+/* Setting h1 heading font color white with gray background and font Poller One */
+h1 {
+	font-family: var(--ff-heading);
+	font-size: 2rem;
+	color: var(--color-primary);
+	background-color: var(--color-secondary);
+	width: 100%;
+	padding: 0.7em 0;
+	margin-bottom: 0.75em;
+	text-align: center;
+}
+
+/* Setting h2 font color white and font Poller One. Adjust width to fit text. */
+h2 {
+	font-family: var(--ff-heading);
+	font-size: 1.5rem;
+	font-weight: 400;
+	background-color: var(--color-primary);
+	width: fit-content;
+	padding: 0.5em 0.4em 0.5em;
+}
+
+/* Setting h3 heading font size and font family Arial */
+h3 {
+	font-family: var(--ff-primary);
+	font-size: 1.65rem;
+	margin-bottom: 0.3em;
+}
+
+/* Setting h4 heading font size, font color white, background dark gray and font Arial Black */
+h4 {
+	color: var(--color-primary);
+	font-family: var(--ff-nav);
+	font-size: 2rem;
+	background-color: var(--color-secondary);
+	padding: 0.4em 1.2em;
+}
+
+/* Setting for h5 heading for size, font color black */
+h5 {
+	color: black;
+	font-family: var(--ff-nav);
+	font-size: 1.8rem;
+	margin: 1em 0;
+}
+
+/* Setting text to uppercase */
+.uppercase {
+	text-transform: uppercase;
+}
+
+/* ID of nav section with display of none to hide on window load for mobile and positioned absolute. */
+#nav-dropdown {
+	position: relative;
+	display: none;
+}
+
+/* Navigation menu button with img background */
+#mobile-navigation {
+	background-image: url(/images/mobile-menu.png);
+	width: 50px;
+	height: 50px;
+	margin-top: 2.8em;
+}
+
+/* Container for navigation that is positioned absolute center, centers content, defines width with a border color of white */
+.nav-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 0;
+	padding: 0;
+	width: 450px;
+	border: 1px solid var(--color-primary);
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	opacity: 0.9;
+}
+
+/* Defines navigation "li" content with no list style and a font family of Arial */
+.nav-items {
+	list-style: none;
+	font-family: var(--ff-primary);
+	font-size: 1.6rem;
+}
+
+/* Defines navigation links with no underline, a bottom border of whie, font color of white, background of blue-green */
+.nav-items a {
+	display: block;
+	text-decoration: none;
+	color: var(--color-primary);
+	background-color: var(--color-accent);
+	border-bottom: solid 0.8px var(--color-primary);
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 0.8em;
+}
+
+/* Navigation link hover changes background to black */
+.nav-items a:hover {
+	background-color: black;
+}
+
+/* Defines the active page navigation link with a font color of black */
+.nav-items a.active {
+	background-color: black;
+}
+
+/* Sets main section position at center */
+main {
+	margin: 0 auto;
+	width: 90%;
+	text-align: center;
+}
+
+/* Defines main content position center and vertical column by flexbox */
+.content-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Places a border around the main image */
+.image-border {
+	border: 2px solid black;
+}
+
+/* Defines image size for both the gallery and blog single post images */
+.gallery-banner-image,
+.blog-banner-image {
+	width: 100%;
+}
+
+/* Defines paragraph font size and line height in main content section */
+.content-container p {
+	font-size: 1.4rem;
+	line-height: 1.7;
+	margin-top: 2em;
+}
+
+/* Sets the margin and padding for the article section */
+article {
+	margin-top: 1em;
+	padding-bottom: 3em;
+}
+
+/* Sets footers with flexbox content page center and column direction  with background color of dark gray and sets physical dimensions */
+footer {
+	/* display: grid;
+	grid-template-columns: 1fr; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: center;
+	background-color: var(--color-secondary);
+	text-align: center;
+	height: 122px;
+	margin-top: 4em;
+	margin-bottom: 4em;
+	/* padding-top: 1em;
+	padding-bottom: 0.5em; */
+}
+
+/* Define footer content at center using flexbox with no list styles */
+footer ul {
+	display: flex;
+	justify-content: center;
+	gap: 2em;
+	list-style: none;
+	padding: 0;
+	padding-top: 0.5em;
+	padding-bottom: 1.5em;
+}
+
+/* Sets footer p content with font color white and defines sizing. */
+footer p {
+	color: var(--color-primary);
+	font-size: 1.6em;
+	margin-top: 1.75em;
+}
+
+/* Define social icons using image sprite with set width and height. */
+.social {
+	background: url(/images/icons.jpg) no-repeat 0 0;
+	display: block;
+	width: 44px;
+	height: 44px;
+}
+
+/* Start of section that defines the location for Social icons according to position on image sprite */
+.twitter {
+	background-position: 0 0;
+}
+.twitter:hover {
+	background-position: -44px 0;
+}
+
+.facebook {
+	background-position: 0 -44px;
+}
+
+.facebook:hover {
+	background-position: -44px -44px;
+}
+
+.google {
+	background-position: 0 -88px;
+}
+
+.google:hover {
+	background-position: -44px -88px;
+}
+
+.pintrest {
+	background-position: 0 -132px;
+}
+
+.pintrest:hover {
+	background-position: -44px -132px;
+}
+/* End of section that defines the location for Social icons*/
+
+@media (min-width: 575px) {
+	/* Increase font size of h1 and set content to fit. */
+	h1 {
+		width: fit-content;
+		font-size: 3.5rem;
+		padding: 0.4em 0.8em 0.4em;
+	}
+
+	/* Increase font size of h4 center with inline margin and fit to content instead of block*/
+	h4 {
+		width: fit-content;
+		font-size: 2.5rem;
+		margin-inline: auto;
+		padding: 0.4em 1em;
+		margin-bottom: 1em;
+	}
+	/* Increase the font size of h5 and adjust margin and padding */
+	h5 {
+		font-size: 2.5rem;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	/* Setting the navigation button to disappear when resize from smaller screens */
+	#mobile-navigation {
+		display: none;
+	}
+
+	/* Setting navigation bar position and initial display of block */
+	#nav-dropdown {
+		position: relative;
+		display: initial;
+	}
+
+	/* Setting the direction of navigation bar to row with flex and position of static. Remove transformation from nav dropdown. */
+	.nav-container {
+		flex-direction: row;
+		margin-top: 1.6em;
+		width: 100%;
+		border: none;
+		position: static;
+		transform: none;
+	}
+
+	/* Setting font size and family of navigation bar */
+	.nav-items {
+		padding: 1.4em;
+		font-family: var(--ff-nav);
+		font-size: 1.4rem;
+		font-weight: bold;
+	}
+
+	/* Setting navigation links font size, color, text decoration none. */
+	.nav-items a {
+		display: block;
+		text-decoration: none;
+		color: var(--color-secondary);
+		background-color: transparent;
+		border-bottom: transparent;
+		padding-top: 1em;
+		padding-bottom: 0.8em;
+		padding-left: 0;
+	}
+
+	/* Define text color and background color when navigation links are hovered over. */
+	.nav-items a:hover {
+		background-color: transparent;
+		color: var(--color-accent);
+	}
+
+	/* Sets the background color and text color navigation link for the active page  */
+	.nav-items a.active {
+		background-color: transparent;
+		color: var(--color-accent);
+	}
+
+	/* Sets size for photo gallery */
+	.content-container {
+		width: 100%;
+	}
+
+	/* Resize Gallery Single Post Image and fit content */
+	.gallery-banner-image {
+		width: 621px;
+		height: 299px;
+		object-fit: cover;
+	}
+
+	/* Resize Blog Single Post Image and fit content */
+	.blog-banner-image {
+		width: 940px;
+		height: 299px;
+		object-fit: cover;
+	}
+	/* Resize the width of article section  */
+	article {
+		width: 620px;
+		margin-top: 0;
+	}
+
+	/* Sets footer flex direction to row. */
+	footer {
+		flex-direction: row;
+		justify-content: space-around;
+		/* padding-top: 2.5em;
+		padding-bottom: 2.5em; */
+	}
+
+	/* Aligns and justifies content in the center of the footer */
+	footer ul {
+		padding: 0;
+		justify-content: center;
+		align-self: center;
+		margin-right: 7.5em;
+	}
+
+	/* Sets the font size and alignement for footer text */
+	footer p {
+		margin-top: 3.6em;
+		text-align: left;
+		margin-left: 5em;
+	}
+}
