@@ -269,7 +269,7 @@ footer p {
 
 /* Define social icons using image sprite with set width and height. */
 .social {
-	background: url(/images/icons.jpg) no-repeat 0 0;
+	background: url(../images/icons.jpg) no-repeat 0 0;
 	display: block;
 	width: 44px;
 	height: 44px;
