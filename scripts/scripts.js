@@ -9,10 +9,10 @@ window.onload = function () {
 		var x = getNavi.getAttribute('style');
 		if (x) {
 			getNavi.removeAttribute('style');
-			document.getElementById('mobile-navigation').style.backgroundImage = 'url(../images/mobile-menu.png)';
+			document.getElementById('mobile-navigation').style.backgroundImage = 'url(./images/mobile-menu.png)';
 		} else {
 			getNavi.style.display = 'block';
-			document.getElementById('mobile-navigation').style.backgroundImage = 'url(../images/mobile-close.png)';
+			document.getElementById('mobile-navigation').style.backgroundImage = 'url(./images/mobile-close.png)';
 		}
 	};
 }
