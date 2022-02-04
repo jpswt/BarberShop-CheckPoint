@@ -9,7 +9,7 @@ window.onload = function () {
 		var x = getNavi.getAttribute('style');
 		if (x) {
 			getNavi.removeAttribute('style');
-			// fix image directory
+			// fix image directory again
 			document.getElementById('mobile-navigation').style.backgroundImage = 'url(./images/mobile-menu.png)';
 		} else {
 			getNavi.style.display = 'block';
