@@ -324,7 +324,7 @@ footer p {
 }
 /* End of section that defines the location for Social icons*/
 
-@media (min-width: 575px) {
+@media (min-width: 960px) {
 	/* Increase font size of h1 and set content to fit. */
 	h1 {
 		width: fit-content;
