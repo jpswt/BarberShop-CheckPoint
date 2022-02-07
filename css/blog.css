@@ -198,9 +198,10 @@ article {
 
 /* Sets dimensions for the blog card and have object fit the image  */
 .blog-card-image {
-	width: 446px;
+	width: 100%;
 	height: 350px;
 	object-fit: cover;
+	object-position: top;
 }
 
 /* Sets the blog card paragraph font size, line height to space out text and margin */
@@ -404,6 +405,7 @@ footer p {
 		display: flex;
 		width: 960px;
 		margin-top: 0;
+		margin-left: 0;
 	}
 
 	/* Sets blog content to flex column and centers to blog container */
