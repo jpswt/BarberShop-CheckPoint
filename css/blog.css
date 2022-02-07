@@ -186,6 +186,11 @@ main {
 	align-items: center;
 }
 
+/* Define width for h1 on screen resize */
+.content-container h1 {
+	width: 450px;
+}
+
 /* Sets top margin of article */
 article {
 	margin-bottom: 1.6em;
@@ -206,6 +211,7 @@ article {
 
 /* Sets the blog card paragraph font size, line height to space out text and margin */
 .blog-card p {
+	width: 398px;
 	font-size: 1.4rem;
 	line-height: 1.7;
 	margin: 0 2.5rem;
