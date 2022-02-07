@@ -332,6 +332,7 @@ footer p {
 		width: 100%;
 	}
 
+	/* Define width for h1 on screen resize */
 	.content-container p {
 		width: 100%;
 	}
