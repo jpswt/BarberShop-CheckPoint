@@ -165,6 +165,7 @@ main {
 
 /* Defines the font size and line height for content text*/
 .content-container p {
+	width: 450px;
 	font-size: 1.4rem;
 	line-height: 1.7;
 }
@@ -328,6 +329,10 @@ footer p {
 
 	/* Sets size for photo gallery */
 	.content-container {
+		width: 100%;
+	}
+
+	.content-container p {
 		width: 100%;
 	}
 
