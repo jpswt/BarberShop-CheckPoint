@@ -94,14 +94,6 @@ h3 {
 	z-index: 1;
 }
 
-/* .nav-toggle {
-	background: var(--color-accent);
-	padding: 2.6em 1.8em;
-	border: 0;
-	border-radius: 0.25em;
-	margin-top: 3em;
-} */
-
 /* Navigation menu button with img background */
 #mobile-navigation {
 	background-image: url(../images/mobile-menu.png);
@@ -357,11 +349,13 @@ footer p {
 	}
 
 	/* Sets footer flex direction to row. */
-	footer {
+	.footer-container {
+		width: 935px;
+		margin: 0 auto;
+		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
-		/* padding-top: 2.5em;
-		padding-bottom: 2.5em; */
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	/* Aligns and justifies content in the center of the footer */
@@ -369,13 +363,11 @@ footer p {
 		padding: 0;
 		justify-content: center;
 		align-self: center;
-		margin-right: 7.5em;
 	}
 
-	/* Sets the font size and alignement for footer text */
+	/* Sets the font size and alignement for footer text and removes top margin*/
 	footer p {
-		margin-top: 3.6em;
+		margin-top: 0;
 		text-align: left;
-		margin-left: 5em;
 	}
 }
