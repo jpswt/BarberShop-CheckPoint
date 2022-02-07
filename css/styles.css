@@ -357,12 +357,12 @@ footer p {
 		color: var(--color-accent);
 	}
 
-	/* Sets the content within banner to fixed width and position of absolute to position content appropraitely for resize. */
+	/* Sets the content within banner to fixed width and position of absolute and margin-left to position content appropraitely for resize. */
 	.banner-container-content {
 		width: 600px;
-		/* position: absolute; */
 		top: 0%;
-		left: 54%;
+		left: 0%;
+		margin-left: 509px;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
@@ -426,13 +426,22 @@ footer p {
 }
 
 @media (min-width: 960px) {
+	/* Defines to container width and size for repsonsive for larger screens */
 	.banner-container {
 		width: 100%;
 		height: auto;
 	}
 
+	/* Defines to container width and size for repsonsive for larger screens */
 	.banner-container img {
 		width: 100%;
 		height: auto;
+	}
+
+	/* Adjust absolute position to percentage to replace margin-left position as starting point to allow for large screen resize */
+	.banner-container-content {
+		top: 0%;
+		left: 53%;
+		margin-left: 0;
 	}
 }
