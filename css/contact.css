@@ -204,6 +204,10 @@ textarea {
 	resize: none;
 }
 
+::placeholder {
+	color: var(--color-secondary);
+}
+
 /* Define button dimensions with a font of Arial Black, color of white and and no border or outline. */
 button {
 	min-width: 70px;

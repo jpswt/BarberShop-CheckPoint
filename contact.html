@@ -41,12 +41,13 @@
         <section class="content-container">
             <h1 class="uppercase">Let's keep in touch</h1>
             <article>
-                <form action="contact.html">
-                    <input class="uppercase" type="text" name="fname" id="fname" value="name">
-                    <input class="uppercase" type="text" name="address" id="address" value="address">
-                    <input class="uppercase" type="text" name="email" id="email" value="email">
-                    <input class="uppercase" type="text" name="phone" id="phone" value="phone number">
-                    <textarea class="uppercase" name="message" rows="10" id="message" resize="none">message</textarea>
+                <form action="results.html" method="GET" autocomplete="off">
+                    <input class="uppercase" type="text" name="fname" id="fname" value="" placeholder="NAME" required>
+                    <input class="uppercase" type="text" name="address" id="address" value="" placeholder="address">
+                    <input class="uppercase" type="email" name="email" id="email" value="" placeholder="email" required>
+                    <input class="uppercase" type="number" name="phone" id="phone" value="" placeholder="Phone Number">
+                    <textarea class="uppercase" name="message" rows="10" id="message" resize="none"
+                        placeholder="message"></textarea>
                     <button class="uppercase" type="submit" name="send" id="send">Send</button>
                     <!-- <input class="uppercase" type="submit" name="send" id="send" value="send"> -->
                 </form>
